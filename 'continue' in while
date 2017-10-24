@@ -1,0 +1,34 @@
+
+i = 0
+
+while i < 5:
+	print i
+
+	j = 0
+	while j <= i:
+		j += 1
+		if j == 3:
+			continue
+		print j
+	print '-'*20
+	i += 1 
+#this little program can work successful
+
+
+i = 0
+
+while i < 5:
+	print i
+
+	j = 0
+	while j <= i:
+		if j == 3:
+			continue
+    j += 1
+		print j
+	print '-'*20
+	i += 1 
+
+
+	#when the 'j+=1' put behind the continue,this process will not work,it cannot skip this loop,and will in a dead loop on this step.
+
